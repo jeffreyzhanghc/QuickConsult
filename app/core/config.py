@@ -8,8 +8,8 @@ class Settings(BaseSettings):
     VERSION: str = "0.1.0"
 
     #
-    FRONTEND_SUCCESS_REDIRECT_URL: str = "https://stingray-app-hru5d.ondigitalocean.app/auth/success"
-    FRONTEND_ERROR_REDIRECT_URL: str= "https://stingray-app-hru5d.ondigitalocean.app/auth/success"
+    FRONTEND_SUCCESS_REDIRECT_URL: str = "https://king-prawn-app-df8b7.ondigitalocean.app/auth/success"
+    FRONTEND_ERROR_REDIRECT_URL: str= "https://king-prawn-app-df8b7.ondigitalocean.app/auth/success"
     
     # Security
     SECRET_KEY: str
@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     REFRESH_TOKEN_EXPIRE_DAYS: int = 1
     
     # CORS
-    BACKEND_CORS_ORIGINS: List[str] = ["https://stingray-app-hru5d.ondigitalocean.app"]  # Frontend URL
+    BACKEND_CORS_ORIGINS: List[str] = ["https://king-prawn-app-df8b7.ondigitalocean.app"]  # Frontend URL
     
     # Database
     POSTGRES_SERVER: str
