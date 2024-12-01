@@ -1,0 +1,30 @@
+yarn-error.log*
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+.idea/
+.vscode/
+*.suo
+.ntvs
+*.njsproj
+*.sln
+*.sw?
+
+.eslintcache
+.next/
+.nuxt/
+venv/
+__pycache__/
+*.pyc
+#ui
+# dependencies
+ui/node_modules
+ui/.pnp
+
+#db migration
+migrations
+
