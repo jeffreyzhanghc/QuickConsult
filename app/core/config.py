@@ -8,8 +8,8 @@ class Settings(BaseSettings):
     VERSION: str = "0.1.0"
 
     #
-    FRONTEND_SUCCESS_REDIRECT_URL: str = "http://localhost:3000/auth/success"
-    FRONTEND_ERROR_REDIRECT_URL: str= "http://localhost:3000/auth/success"
+    FRONTEND_SUCCESS_REDIRECT_URL: str = "https://stingray-app-hru5d.ondigitalocean.app/auth/success"
+    FRONTEND_ERROR_REDIRECT_URL: str= "https://stingray-app-hru5d.ondigitalocean.app/auth/success"
     
     # Security
     SECRET_KEY: str
@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     REFRESH_TOKEN_EXPIRE_DAYS: int = 1
     
     # CORS
-    BACKEND_CORS_ORIGINS: List[str] = ["http://localhost:3000"]  # Frontend URL
+    BACKEND_CORS_ORIGINS: List[str] = ["https://stingray-app-hru5d.ondigitalocean.app"]  # Frontend URL
     
     # Database
     POSTGRES_SERVER: str
@@ -65,7 +65,7 @@ class Settings(BaseSettings):
     SESSION_COOKIE_SECURE: bool = True #True inproducttion
     SESSION_COOKIE_HTTPONLY: bool = True
     SESSION_COOKIE_SAMESITE: str = "lax"
-    COOKIE_DOMAIN: str = "localhost" # need to change during production
+    COOKIE_DOMAIN: str = "king-prawn-app-df8b7.ondigitalocean.app" # need to change during production
     
     # Frontend URLs
     FRONTEND_URL: str 
