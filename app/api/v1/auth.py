@@ -158,11 +158,14 @@ async def refresh_token(
     """Refresh access token"""
     #breakpoint()
     refresh_token = request.cookies.get("refresh_token")
+    '''
+    
     if not refresh_token:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="No refresh token provided"
         )
+    '''
     
     auth_service = AuthService(db)
     token_response = await auth_service.refresh_tokens(refresh_token)
